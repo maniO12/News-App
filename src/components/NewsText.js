@@ -6,13 +6,13 @@ export default class NewsText extends Component {
     return (
     
    <div>
-    <div class="card" style={{width: "18rem",}}>
-  <img src={imageurl}  class="card-img-top" alt=" Not found"></img>
-  <div class="card-body">
-    <h5 class="card-title">{title}</h5>
-    <p class="card-text">{descripition}</p>
-    <p class="card-text"><small class="txt">By {!author?"unknown":author}</small> </p>
-    <a href={Url} class="btn btn-primary">More..</a>
+    <div className="card" style={{width: "18rem",}}>
+  <img src={imageurl}  className="card-img-top" alt=" Not found"></img>
+  <div className="card-body">
+    <h5 className="card-title">{title}</h5>
+    <p className="card-text">{descripition}</p>
+    <p className="card-text"><small className="txt">By {!author?"unknown":author}</small> </p>
+    <a href={Url} className="btn btn-primary">More..</a>
   </div>
 
   

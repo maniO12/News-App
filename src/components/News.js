@@ -85,10 +85,10 @@ fetchMoreData=async()=>{
 
   render() {
     return (
-      <> <h1 class="top">
+      <> <h1 className="top">
       {this.state.loading && <Spinner />} 
-              <span class="color">Welcome</span> <span class="color1">to</span>
-              <span class="color2">India News-BY MK</span>{" "}
+              <span className="color">Welcome</span> <span className="color1">to</span>
+              <span className="color2">India News-BY MK</span>{" "}
             </h1>
     
 
@@ -98,12 +98,12 @@ fetchMoreData=async()=>{
   hasMore={this.state.articles.length !== this.state.totalResults}
   loader={<Spinner/>}
   >
-        <div class="container">
-          <div class="articles">
+        <div className="container">
+          <div className="articles">
          
             {this.state.articles.map((element) => {
               return (
-                <div class="main" key={element.url}>
+                <div classNameName="main" key={element.url}>
                   <NewsText title={element.title ? element.title : ""}  descripition={element.descripition ? element.description : ""}imageurl={element.urlToImage}
                     Url={element.url} author={element.author ? element.author : ""}
                     source={element.source ? element.source : ""} />
